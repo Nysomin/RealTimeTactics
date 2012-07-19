@@ -209,6 +209,7 @@ void WelcomeWindow::PlayerJoinedEvent()
 	}
 	if(m_playerDescription.m_ID !=	change.m_playerDescription.m_ID)
 	{
+		mplayerDescription[2].m_ID = change.m_playerDescription.m_ID;
 		PlayerListColumns playerColumns;
 
 		//Add a new row for the new player

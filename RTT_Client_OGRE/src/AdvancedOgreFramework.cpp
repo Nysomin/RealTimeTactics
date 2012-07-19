@@ -141,6 +141,7 @@ bool OgreFramework::initOgre(Ogre::String wndTitle, OIS::KeyListener *pKeyListen
 
 	m_pRoot = new Ogre::Root(pluginsFilePath, ogrecfgFilePath, ogreLogFilePath);
 
+
 	if(!(m_pRoot->restoreConfig() || m_pRoot->showConfigDialog()))
 		return false;
 
@@ -204,7 +205,6 @@ bool OgreFramework::initOgre(Ogre::String wndTitle, OIS::KeyListener *pKeyListen
 	Ogre::TextureManager::getSingleton().setDefaultNumMipmaps(5);
 	Ogre::ResourceGroupManager::getSingleton().initialiseAllResourceGroups();
 
-
 	m_pTimer = new Ogre::Timer();
 	m_pTimer->reset();
 
@@ -222,6 +222,8 @@ bool OgreFramework::initOgre(Ogre::String wndTitle, OIS::KeyListener *pKeyListen
 	}
 
 	m_pDebugOverlay->show();
+
+
 
 	m_pRenderWnd->setActive(true);
 
@@ -241,7 +243,6 @@ bool OgreFramework::initOgre(Ogre::String wndTitle, OIS::KeyListener *pKeyListen
 void OgreFramework::startCallBack()
 {
 	m_callbackHandler = new RTT::CallbackHandler();
-
 //	TODO: these things...
 //	m_callbackHandler->m_sig_team_change.connect(sigc::mem_fun(*this, &WelcomeWindow::TeamChangedEvent));
 //	m_callbackHandler->m_sig_color_change.connect(sigc::mem_fun(*this, &WelcomeWindow::TeamColorChangedEvent));
@@ -255,6 +256,7 @@ void OgreFramework::startCallBack()
 //	m_callbackHandler->m_sig_match_started.connect(sigc::mem_fun(*this, &WelcomeWindow::MatchStartedEvent));
 //	m_callbackHandler->m_sig_callback_closed.connect(sigc::mem_fun(*this, &WelcomeWindow::CallbackClosedEvent));
 //	m_callbackHandler->m_sig_callback_error.connect(sigc::mem_fun(*this, &WelcomeWindow::CallbackErrorEvent));
+
 }
 
 bool OgreFramework::keyPressed(const OIS::KeyEvent &keyEventRef)
