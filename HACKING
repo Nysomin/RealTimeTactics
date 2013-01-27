@@ -9,7 +9,7 @@ Dependencies:
 RTT depends on a few packages that are easily available through the Ubuntu/Fedora/openSUSE repositories:
 
 ***Instructions for Ubuntu 12.10***
-sudo apt-get install libogre-1.8.0 libogre-dev libcegui-mk2-dev libcegui-mk2-0.7.6 libsparsehash-dev libgtkmm-3.0-dev libois-dev libssl-dev libboost-dev libboost-date-time-dev
+sudo apt-get install libogre-1.8.0 libogre-dev libcegui-mk2-dev libcegui-mk2-0.7.6 libsparsehash-dev libgtkmm-3.0-dev libois-dev libssl-dev libboost-dev libboost-date-time-dev libevent-dev
 
 
 ***Instructions for Ubuntu 11.10/12.04***
