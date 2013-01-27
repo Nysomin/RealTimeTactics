@@ -23,14 +23,14 @@ release:
 	cd RTT_Common/Release; $(MAKE)
 	cd RTT_Server/Release; $(MAKE)
 	cd RTT_Client_Core/Release; $(MAKE)
-	cd RTT_Client_GTK/Release; $(MAKE)
+#	cd RTT_Client_GTK/Release; $(MAKE)
 	cd RTT_Client_OGRE/Release; $(MAKE)
 	cp RTT_Client_OGRE/Release/plugins.cfg RTT_Client_OGRE/plugins.cfg
 	cp RTT_Client_OGRE/Release/resources.cfg RTT_Client_OGRE/resources.cfg
 	cp RTT_Client_OGRE/Release/ogre.cfg RTT_Client_OGRE/ogre.cfg
 	#copy binaries to neutral location
 	cp RTT_Client_Core/Release/libRTT_Client_Core.so RTT_Client_Core/
-	cp RTT_Client_GTK/Release/RTT_Client_GTK RTT_Client_GTK/
+#	cp RTT_Client_GTK/Release/RTT_Client_GTK RTT_Client_GTK/
 	cp RTT_Client_OGRE/Release/RTT_Client_OGRE RTT_Client_OGRE/
 	cp RTT_Server/Release/RTT_Server RTT_Server/
 
@@ -52,7 +52,7 @@ clean-release:
 
 install:
 	install RTT_Client_Core/libRTT_Client_Core.so $(DESTDIR)/usr/lib/
-	install RTT_Client_GTK/RTT_Client_GTK $(DESTDIR)/usr/bin/
+#	install RTT_Client_GTK/RTT_Client_GTK $(DESTDIR)/usr/bin/
 	install RTT_Server/RTT_Server $(DESTDIR)/usr/bin/
 	install RTT_Client_OGRE/RTT_Client_OGRE $(DESTDIR)/usr/bin/
 	mkdir -p $(DESTDIR)/usr/share/RTT/GTK/UI/
