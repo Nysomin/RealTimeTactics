@@ -16,9 +16,14 @@ sudo apt-get install libsparsehash-dev libgtkmm-3.0-dev libois-dev libssl-dev li
 ***Instructions for Fedora 16/17 and openSUSE 12.1***
 sudo yum install sparsehash-devel gtkmm30-devel openssl-devel boost-devel boost-date-time
 
+**Instructions for Fedora 19 and later***
+sudo yum install ogre-devel cegui-devel cegui-ogre-renderer sparsehash-devel gtkmm30-devel openssl-devel 
+
 ########################
 OGRE 3D
 ########################
+
+This step can be skipped with using Fedora 19 and you want to install OGRE and CEGUI from the F19 repos.
 
 RTT_Client_OGRE relies on OGRE version 1.8.0, which is currently available only as source. 
 
